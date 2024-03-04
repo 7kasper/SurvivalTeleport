@@ -1,0 +1,19 @@
+name: SurvivalTeleport
+main: nl.kaspermuller.survivalteleport.SurvivalTeleport
+description: A way to teleport in survival minecraft that does not feel like cheating.
+author: 7kasper
+version: 0.1
+api-version: 1.20
+
+permissions:
+  survivalteleport.*:
+    description: Gives access to all SurvivalTeleport stuff.
+    children:
+      survivalteleport.bind: true
+      survivalteleport.use: true
+  survivalteleport.bind:
+    description: Allows you to bind a teleport-clock to another player.
+    default: true
+  survivalteleport.use:
+    description: Allows you to use a bound teleport-clock.
+    default: true
